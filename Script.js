@@ -35,3 +35,4 @@ for(let v=0;v<5;v++)
 
 }
 console.log(a);
+let b=[10,20,"uma"];
