@@ -36,3 +36,8 @@ for(let v=0;v<5;v++)
 }
 console.log(a);
 let b=[10,20,"uma"];
+console.log(b);
+b.pop();
+console.log(b);
+b.shift();
+console.log(b);
