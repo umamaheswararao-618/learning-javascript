@@ -41,3 +41,35 @@ b.pop();
 console.log(b);
 b.shift();
 console.log(b);
+
+const obj={
+    id:1,
+    name:"uma",
+    a:[1,2,3,"uma"]
+}
+console.log(obj.id);
+console.log(obj.a);
+const recipes= [{
+    id:1,
+    name:"uma",
+    a:[1,2,3,"uma"]
+    },
+{
+    id:3,
+    name:"uma",
+    a:[1,2,3,"uma"]
+},
+{
+    id:2,
+    name:"uma",
+    a:[1,2,3,"uma"]
+}]
+    for(const one in recipes){
+        console.log(one.id);
+    }
+   for(const one of recipes){
+        console.log(one.id);
+        for(const ar in one.a){
+            console.log(ar);
+        }
+    }
