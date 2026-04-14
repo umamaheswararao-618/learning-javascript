@@ -99,3 +99,7 @@ const recipes= [{
         case  "/":div(i,j);break;
         default:console.log("invalid");
     }
+    let name="uma"
+    let age=18;
+    console.log(`my name is ${name} and age ${age}`);//backtick
+    
