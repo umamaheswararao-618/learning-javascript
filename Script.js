@@ -83,23 +83,32 @@ const recipes= [{
     function m(){
         return 3;
     }
-    console.log(m)//returns function
-    console.log(m());
-    const add1=(a,b)=>{console.log( a+b)};
-    const sub=(a,b)=>{console.log( a-b)};
-    const mul=(a,b)=>{console.log( a*b)};
-    const div=(a,b)=>{console.log( a/b)};
-    const i=Number(prompt("Enter a"));
-    const j=Number(prompt("Enter b"));
-    const num18=prompt("enter num");
-    switch(num18){
-        case  "+":add1(i,j);break;
-        case  "-":sub(i,j);break;
-        case  "*":mul(i,j);break;
-        case  "/":div(i,j);break;
-        default:console.log("invalid");
-    }
-    let name="uma"
-    let age=18;
-    console.log(`my name is ${name} and age ${age}`);//backtick
+    // console.log(m)//returns function
+    // console.log(m());
+    // const add1=(a,b)=>{console.log( a+b)};
+    // const sub=(a,b)=>{console.log( a-b)};
+    // const mul=(a,b)=>{console.log( a*b)};
+    // const div=(a,b)=>{console.log( a/b)};
+    // const i=Number(prompt("Enter a"));
+    // const j=Number(prompt("Enter b"));
+    // const num18=prompt("enter num");
+    // switch(num18){
+    //     case  "+":add1(i,j);break;
+    //     case  "-":sub(i,j);break;
+    //     case  "*":mul(i,j);break;
+    //     case  "/":div(i,j);break;
+    //     default:console.log("invalid");
+    // }
+    // let name="uma"
+    // let age=18;
+    // console.log(`my name is ${name} and age ${age}`);//backtick
+   let dos= document.getElementById("hi");
+   let val=dos.textContent
+   //setTimeout(3000);
+   dos.innerText=val+"Lets See";
+   dos.innerHTML=val+"<sub>Let`s See</sub>"
     
+   const boxes=document.getElementsByClassName("box");
+   for(let i=0;i<boxes.length;i++){
+    boxes[i].style.color = "red";
+   }
