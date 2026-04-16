@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       const cal=()=>{
+        let a=(document.getElementById("a").value);
+        let b=(document.getElementById("b").value);
+        let sys=(document.getElementById("sys").value);
+        document.getElementById("sol").innerText=eval(a+sys+b);
+       }
+    </script>
+</head>
+<body style="margin-top: 200px;">
+    <center>
+        <div>
+            <input type="text" name="" id="a" placeholder="Enter A">
+            <br/>
+            <input type="text" name="" id="b" placeholder="Enter B">
+            <br/>
+             <input type="text" name="" id="sys" placeholder="Enter Symbol">
+            <input type="submit" name="sub" id="" onclick="cal()">
+            <p id="sol"></p>
+
+        </div>
+    </center>
+</body>
+</html>
